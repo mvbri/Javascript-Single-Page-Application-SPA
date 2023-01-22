@@ -1,0 +1,28 @@
+{
+  "name": "javascript-single-page-application-spa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvbri/Javascript-Single-Page-Application-SPA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvbri/Javascript-Single-Page-Application-SPA/issues"
+  },
+  "homepage": "https://github.com/mvbri/Javascript-Single-Page-Application-SPA#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
