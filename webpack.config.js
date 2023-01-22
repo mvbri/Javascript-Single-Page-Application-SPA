@@ -2,6 +2,11 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	mode: 'production',
+	performance: {
+		hints: false,
+		maxEntrypointSize: 512000,
+		maxAssetSize: 512000,
+	},
 	entry: './src/script.js',
 	output: {
 		path: __dirname + '/dist',
@@ -9,6 +14,10 @@ module.exports = {
 	},
 	module: {
 		rules: [
+			{
+				test: /\.css$/i,
+				use: ['style-loader', 'css-loader'],
+			},
 			{
 				test: /\.s[ac]ss$/i,
 				use: [
