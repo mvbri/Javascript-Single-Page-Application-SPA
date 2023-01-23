@@ -1,6 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.scss';
 
+import { router } from './router/index.router';
+
+router(window.location.hash);
 window.addEventListener('hashchange', () => {
-	console.log(window.location.hash);
+	router(window.location.hash);
 });
