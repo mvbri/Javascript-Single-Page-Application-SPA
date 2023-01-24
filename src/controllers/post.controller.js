@@ -10,8 +10,11 @@ export default async () => {
 	divElement.innerHTML = view;
 
 	const postsElement = divElement.querySelector('#posts');
+	const totalPost = divElement.querySelector('#totalPost');
 
 	const posts = await getPost();
+	totalPost.innerHTML = posts.length;
+
 	posts.forEach((post) => {
 		postsElement.innerHTML += `
 			<li class="list-group-item border-primary bg-dark text-white">
